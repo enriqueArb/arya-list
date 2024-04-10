@@ -3,12 +3,7 @@ console.log("Añadamos a algún enemigo...");
 const form = document.getElementById("form");
 form.addEventListener("submit", onFormSubmit);
 
-function onFormSubmit(event) {
-  event.preventDefault();
-
-  const data = new FormData(event.target);
-  const name = data.get("nombre");
-
+function addListItem(name) {
   if (!name) return;
 
   const listItem = document.createElement("li");
@@ -29,4 +24,13 @@ function onFormSubmit(event) {
   list.appendChild(listItem);
 
   document.getElementById("nombre").value = "";
+}
+
+function onFormSubmit(event) {
+  event.preventDefault();
+
+  const data = new FormData(event.target);
+  const name = data.get("nombre");
+
+  addListItem(name);
 }
