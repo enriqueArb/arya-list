@@ -29,10 +29,11 @@
       </nav>
     </header>
     <main class="main main--thin">
-      <section class="section section--full">
+      <section class="section">
         <h1 class="title">Mi lista de nombres</h1>
-        <form class="form form--desktop">
+        <form class="form" id="form">
           <input
+            id="nombre"
             type="text"
             name="nombre"
             placeholder="Joffrey Baratheon"
@@ -70,18 +71,6 @@
             </label>
           </li>
         </ul>
-
-        <form class="form form--mobile" id="form">
-          <input
-            id="nombre"
-            type="text"
-            name="nombre"
-            placeholder="Joffrey Baratheon"
-            aria-label="Introduce un nombre"
-            class="form__input"
-          />
-          <button type="submit" class="form__button">Añadir</button>
-        </form>
       </section>
     </main>
     <footer class="footer">
