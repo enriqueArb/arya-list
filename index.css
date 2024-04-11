@@ -39,6 +39,7 @@ body {
 .topbar {
   position: sticky;
   top: 0;
+  z-index: 1;
   background: #f8f7f5;
 }
 
@@ -75,7 +76,6 @@ body {
 }
 
 .main--thin {
-  display: flex;
   width: 100%;
 
   @media screen and (min-width: 632px) {
@@ -136,12 +136,6 @@ body {
   &:not(:last-child) {
     margin-bottom: 40px;
   }
-}
-
-.section--full {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
 }
 
 .list {
